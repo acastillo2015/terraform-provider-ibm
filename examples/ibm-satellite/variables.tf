@@ -5,14 +5,17 @@
 
 variable "ibmcloud_api_key" {
   description = "IBM Cloud API Key"
+  default = "_uA1KeWParQfUY0iTi_uJr1rY5IqzhDu-hfg31KR24C3"
 }
 
 variable "ibm_region" {
   description = "Region of the IBM Cloud account. Currently supported regions for satellite are us-east and eu-gb region."
+  default     = "us-east"
 }
 
 variable "resource_group" {
   description = "Name of the resource group on which location has to be created"
+  default     = "ArmandoC"
 }
 
 ##################################################
@@ -20,6 +23,7 @@ variable "resource_group" {
 ##################################################
 variable "location" {
   description = "Location Name"
+  default     = "satellite-kubernetespain"
 }
 
 variable "managed_from" {
@@ -80,7 +84,7 @@ variable "addl_host_count" {
 variable "is_prefix" {
   description = "Prefix to the Names of the VPC Infrastructure resources"
   type        = string
-  default     = "satellite-ibm"
+  default     = "satellite-spain"
 }
 
 variable "public_key" {
